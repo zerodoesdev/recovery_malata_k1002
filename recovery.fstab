@@ -5,7 +5,7 @@
 /dtbo           emmc    /dev/block/platform/bootdevice/by-name/dtbo              flags=display="DTBO";backup=1;flashimg=1
 
 /system_root    ext4    /dev/block/platform/bootdevice/by-name/system            flags=display="System";backup=1;wipeingui
-/system_image   emmc    /dev/block/platform/bootdevice/by-name/system            flags=display="System Image";backup=1flashimg=1
+/system_image   emmc    /dev/block/platform/bootdevice/by-name/system            flags=display="System Image";backup=1;flashimg=1
 /vendor         ext4    /dev/block/platform/bootdevice/by-name/vendor            flags=display="Vendor";backup=1;wipeingui
 /vendor_image   emmc    /dev/block/platform/bootdevice/by-name/vendor            flags=display="Vendor Image";backup=1;flashimg=1
 
