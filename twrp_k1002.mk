@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2019 Potato Open Sauce Project
+# Copyright (C) 2025 The Android Open Source Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -17,16 +17,12 @@
 # Release name
 PRODUCT_RELEASE_NAME := k1002
 
-# Inherit from those products. Most specific first.
-$(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
-$(call inherit-product, $(SRC_TARGET_DIR)/product/embedded.mk)
-
-# Inherit from our custom product configuration
-$(call inherit-product, vendor/omni/config/common.mk)
+# Inherit device-level build targets, copy specs, and common recovery config
+$(call inherit-product, device/unowhy/k1002/device.mk)
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := k1002
-PRODUCT_NAME := omni_k1002
+PRODUCT_NAME := twrp_k1002
 PRODUCT_BRAND := UNOWHY
 PRODUCT_MODEL := Y10G001S4M_EEA
 PRODUCT_MANUFACTURER := malata
